@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stone Paper Scissors</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="nameModal" style="display: none">
+            <h2>Enter Your Name</h2>
+            <input type="text" id="playerName" placeholder="Your Name" />
+            <button onclick="startGame()">Start Game</button>
+        </div>
+
+        <div id="gameContainer">
+            <div id="status">Waiting for another opponent...</div>
+            <div id="scores">
+                <span id="yourScore">Your Score: 0</span> vs
+                <span id="opponentScore">Opponent Score: 0</span>
+            </div>
+            <div id="buttons">
+                <button onclick="makeMove('Stone')">Stone</button>
+                <button onclick="makeMove('Paper')">Paper</button>
+                <button onclick="makeMove('Scissors')">Scissors</button>
+            </div>
+            <div id="spinner" class="spinner" style="display: none"></div>
+        </div>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
